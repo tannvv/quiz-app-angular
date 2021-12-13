@@ -28,15 +28,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Functional
 - Main page for admin
-![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/report-image/main-page.png)
+![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/blob/main/report-image/create.png)
 - Create question
-![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/report-image/create.png)
+![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/blob/main/report-image/create.png)
 - Detail question
-![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/report-image/detail.png)
+![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/blob/main/report-image/detail.png)
 - Delete question
-![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/report-image/delete.png)
+![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/blob/main/report-image/delete.png)
 - Take exem
-![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/report-image/take-exam.png)
+![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/blob/main/report-image/take-exam.png)
 - Mark report
-![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/report-image/mark-report.png)
+![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/blob/main/report-image/mark-report.png)
 
