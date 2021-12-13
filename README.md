@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Functional
+- Main page for admin
+![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/report-image/main-page.png)
+- Create question
+![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/report-image/create.png)
+- Detail question
+![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/report-image/detail.png)
+- Delete question
+![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/report-image/delete.png)
+- Take exem
+![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/report-image/take-exam.png)
+- Mark report
+![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/report-image/mark-report.png)
+
