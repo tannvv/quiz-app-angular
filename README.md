@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Functional
 - Main page for admin
-![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/blob/main/report-image/create.png)
+![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/blob/main/report-image/main-page.png)
 - Create question
 ![Image of Yaktocat](https://github.com/tannvv/quiz-app-angular/blob/main/report-image/create.png)
 - Detail question
