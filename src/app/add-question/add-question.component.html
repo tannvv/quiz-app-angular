@@ -1,0 +1,87 @@
+<div class="container form-center">
+  <h2 class="text-center mb-4 mt-4">Create new question</h2>
+  <form [formGroup]="formData" (ngSubmit)="onCreateQuestion(formData)">
+    <span class="p-float-label mb-4">
+      <textarea
+        id="float-input"
+        rows="1"
+        cols="65"
+        pInputTextarea
+        formControlName="question"
+      ></textarea>
+      <label for="float-input">Question</label>
+    </span>
+    <span class="p-float-label mb-4">
+      <textarea
+        id="float-input"
+        rows="1"
+        cols="65"
+        pInputTextarea
+        formControlName="answerOne"
+      ></textarea>
+      <label for="float-input">Answer one</label>
+    </span>
+    <span class="p-float-label mb-4">
+      <textarea
+        id="float-input"
+        rows="1"
+        cols="65"
+        pInputTextarea
+        formControlName="answerSecond"
+      ></textarea>
+      <label for="float-input">Answer second</label>
+    </span>
+    <span class="p-float-label mb-4">
+      <textarea
+        id="float-input"
+        rows="1"
+        cols="65"
+        pInputTextarea
+        formControlName="answerThird"
+      ></textarea>
+      <label for="float-input">Answer third</label>
+    </span>
+    <span class="p-float-label mb-4">
+      <textarea
+        id="float-input"
+        rows="1"
+        cols="65"
+        pInputTextarea
+        formControlName="answerFour"
+      ></textarea>
+      <label for="float-input">Answer four</label>
+    </span>
+    <span class="p-float-label mb-4">
+      <textarea
+        id="float-input"
+        rows="1"
+        cols="65"
+        pInputTextarea
+        formControlName="answerCorrect"
+      ></textarea>
+      <label for="float-input">Correct answer</label>
+    </span>
+    <div class="container">
+      <button
+      pButton
+      pRipple
+      type="button"
+      label="Save"
+      class="p-button-raised"
+      (click)="onCreateQuestion(formData)"
+      style="margin-right: 20px; width: 30%;"
+      [disabled]="!validFormData()"
+    ></button>
+    <button
+      pButton
+      pRipple
+      type="button"
+      label="Cancel"
+      (click)="onCancelQuestion()"
+      class="p-button-raised p-button-danger"
+      style="width: 30%;"
+    ></button>
+    </div>
+  </form>
+</div>
+<p-toast></p-toast>

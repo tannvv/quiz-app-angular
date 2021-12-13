@@ -1,0 +1,48 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "question": "Công nghệ thông tin là gì ?",
+      "answers": [
+        "Là một môn học",
+        "Là một nghành học",
+        "Là một thành tích học",
+        "Là một cái gì đó khó hiểu vcl x2"
+      ],
+      "correctAnswer": 4
+    },
+    {
+      "question": "Laptop nào dùng sướng nhất ?",
+      "answers": [
+        "Acer",
+        "Asus",
+        "Lenovo",
+        "Macbook"
+      ],
+      "correctAnswer": 2,
+      "id": "ZKlvNFW"
+    },
+    {
+      "question": "Tại sao lại thực tập ở Quy Nhơn ?",
+      "answers": [
+        "Quy Nhơn có biển",
+        "Quy Nhơn có em",
+        "Quy Nhơn hiện đại",
+        "Quy Nhơn đẹp"
+      ],
+      "correctAnswer": 2,
+      "id": "ISLkQNT"
+    },
+    {
+      "question": "MVC là viết tắt của gì ?",
+      "answers": [
+        "Model view controller",
+        "Model controller view",
+        "View model controller",
+        "Model controller controller "
+      ],
+      "correctAnswer": 1,
+      "id": "jxLIydi"
+    }
+  ]
+}

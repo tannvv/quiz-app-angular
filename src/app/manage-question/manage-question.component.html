@@ -1,0 +1,78 @@
+<div class="container w-75">
+  <div class="m-4">
+    <button
+      pButton
+      pRipple
+      type="button"
+      icon="pi pi-plus-circle"
+      class="p-button-rounded p-button-info"
+      (click)="openFormCreate()"
+    ></button>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Question</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let question of questions; let i = index">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ question.question }}</td>
+        <td>
+          <button
+            pButton
+            rRipple
+            type="button"
+            label="View detail"
+            class="p-button-raised p-button-info btn-sm"
+            style="margin-right: 30px"
+            (click)="onViewDetail(question.id)"
+          ></button>
+          <button
+            pButton
+            rRipple
+            type="button"
+            label="Edit"
+            class="p-button-raised p-button-help btn-sm"
+            style="margin-right: 30px"
+            (click)="onEdit(question.id)"
+          ></button>
+          <button
+            pButton
+            rRipple
+            type="button"
+            label="Delete"
+            class="p-button-raised p-button-danger btn-sm"
+            (click)="onDelete(question)"
+          ></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p-dialog [(visible)]="isDisplayDetail" [style]="{ width: '50vw' }">
+  <ng-template pTemplate="header">
+    <div style="font-weight: 700">{{ questionSelected.question }}</div>
+  </ng-template>
+  <div *ngFor="let answer of questionSelected.answers; let i = index">
+    <span style="margin-right: 20px">{{ i + 1 }}.</span>
+    <span>{{ answer }}</span>
+  </div>
+  <p>Answer correct : {{ questionSelected.correctAnswer }}</p>
+  <ng-template pTemplate="footer">
+    <p-button
+      icon="pi pi-check"
+      (click)="isDisplayDetail = false"
+      label="Ok"
+      styleClass="p-button-text"
+    ></p-button>
+  </ng-template>
+</p-dialog>
+
+<p-confirmDialog
+  header="Confirmation"
+  icon="pi pi-exclamation-triangle"
+></p-confirmDialog>
