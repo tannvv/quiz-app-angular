@@ -25,6 +25,8 @@ import {TableModule} from 'primeng/table';
 import { DetailQuestionComponent } from './detail-question/detail-question.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 import {ConfirmDialogModule} from 'primeng/confirmdialog';
+import {SidebarModule} from 'primeng/sidebar';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import {ConfirmDialogModule} from 'primeng/confirmdialog';
     UpdateQuestionComponent,
     ManageQuestionComponent,
     DetailQuestionComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,8 @@ import {ConfirmDialogModule} from 'primeng/confirmdialog';
     DialogModule,
     DataViewModule,
     TableModule,
-    ConfirmDialogModule
+    ConfirmDialogModule,
+    SidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,15 +5,22 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <a class="navbar-brand" href="#" style="margin-left: 20px;">Quiz app</a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="manage-question">Admin</a>
-      </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="exercise">Exercise</a>
       </li>
+      <li class="nav-item" *ngIf="isUserLoggedIn; else isLogout">
+        <a class="nav-link" (click)="onLogout()" style="cursor:pointer">Logout</a>
+      </li>
+      <ng-template #isLogout>
+        <a class="nav-link" routerLink="login">Login</a>
+      </ng-template>
     </ul>
+    <!-- <p-button type="button" class="p-mr-2" (click)="toggleSidebar()" icon="pi pi-arrow-right"></p-button> -->
   </div>
 </nav>
 <div class="container">
   <router-outlet></router-outlet>
 </div>
+<p-sidebar [(visible)]="isVisibleSidebar" [baseZIndex]="10000">
+  <h3>Left Sidebar</h3>
+</p-sidebar>

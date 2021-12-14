@@ -1,3 +1,4 @@
+import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UpdateQuestionComponent } from './update-question/update-question.component';
 import { ManageQuestionComponent } from './manage-question/manage-question.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path : "manage-question", component : ManageQuestionComponent},
   {path : "detail-question/:id", component : DetailQuestionComponent},
   {path : "update-question/:id", component : UpdateQuestionComponent},
+  {path : "login", component:LoginComponent},
   {path : "**", component:PageNotFoundComponent}
 ];
 
