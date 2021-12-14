@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
     let password : string = this.loginForm.controls.password.value
     if(this.loginService.login(email,password)){
         this.interactionLogin.sendStateLogin('true')
-        this.router.navigate(['manage-question'])
+        this.router.navigateByUrl('/manage-question')
     }else{
       this.messageService.add({
         severity : 'error',
